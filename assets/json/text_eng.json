@@ -1,0 +1,12 @@
+{
+    "name":"Oscar",
+    "text":"This is a placeholder in english",
+    "language": "English",
+    "btn_lang": "Traducir al español",
+    "navbar":{
+        "about":"About",
+        "projects":"Projects",
+        "contact": "Contact",
+        "home":"Home"
+    }
+}

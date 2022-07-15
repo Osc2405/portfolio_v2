@@ -1,0 +1,12 @@
+{
+    "name":"Eduardo",
+    "text":"Este es un placeholder en español",
+    "language": "Español",
+    "btn_lang": "Translate to english",
+    "navbar":{
+        "about":"Acerca de",
+        "projects":"Proyectos",
+        "contact": "Contacto",
+        "home":"Inicio"
+    }
+}
