@@ -16,16 +16,6 @@ a {
   box-sizing: border-box;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 
 .switch {
   position: relative;
@@ -126,6 +116,8 @@ input:checked + .slider:before {
   margin-left: 24px;
   font-weight: bold;
   text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;;
 }
 
 .mobile-icon{
@@ -305,4 +297,77 @@ color: #fff;
     grid-template-rows: repeat(5,60px);
   }
   
+}
+
+/* Hero section */
+
+.hero-section {
+  min-height: 100vh;
+  padding: 4rem 3rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #0d0d0d;
+  color: #fff;
+}
+
+.hero-hi{
+  font-size:x-large;
+}
+.hero-name{
+  margin: 0px;
+  font-size: clamp(40px, 8vw, 80px);
+}
+.wrapper{
+  display: flex;
+  align-items: center;
+}
+.wrapper .static-txt{
+  color: #fff;
+  font-size: 40px;
+  font-weight: 400;
+}
+.wrapper .dynamic-txts{
+  height: 60px;
+  line-height: 60px;
+  overflow: hidden;
+  padding-left: 12px;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: #01bf71;
+  font-size: 40px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -240px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  line-height: 60px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 110%;
+  width: 100%;
+  background: #0d0d0d;
+  border-left: 2px solid #01bf71;
+  animation: typing 3s steps(26) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
 }

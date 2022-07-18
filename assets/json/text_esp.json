@@ -8,5 +8,12 @@
         "projects":"Proyectos",
         "contact": "Contacto",
         "home":"Inicio"
+    },
+    "hero":{
+        "hi":"Hola, soy",
+        "name":"Oscar Rosero",
+        "welcome":"Welcome to my portfolio",
+        "i_am":"Soy un",
+        "title":["Desarrollador Web Junior","Científico de datos Junior"]
     }
 }

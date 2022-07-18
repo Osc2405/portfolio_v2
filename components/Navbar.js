@@ -2,7 +2,7 @@ import Link from "next/link";
 import { FaBars } from "react-icons/fa";
 import { UseLanguage } from "../context/languageContext";
 
-export default function Navbar(toggle_nav) {
+export default function Navbar({ toggle_nav }) {
   const { content, language, toggle_language } = UseLanguage();
 
   return (
