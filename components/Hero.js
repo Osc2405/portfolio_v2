@@ -1,13 +1,12 @@
 import React from "react";
 import { UseLanguage } from "../context/languageContext";
-import Slide from "react-reveal/Slide";
 
 const Hero = () => {
   const { content, language, toggle_language } = UseLanguage();
   return (
     <>
       <section className="hero-section" id="hero">
-        <Slide right cascade>
+        
           <div>
             <p className="hero-hi">{content.hero.hi}</p>
             <h1 className="hero-name">{content.hero.name}</h1>
@@ -29,7 +28,7 @@ const Hero = () => {
               </ul>
             </div>
           </div>
-        </Slide>
+      
       </section>
     </>
   );

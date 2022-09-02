@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Navbar from "./navbar";
+import Navbar from "./Navbar";
 import SideBar from "./SideBar";
 import { UseLanguage } from "../context/languageContext";
 import { useState } from "react";
